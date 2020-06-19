@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img
+      class="logo"
+      alt="Souther Utah Vue.js Meetup logo"
+      src="../assets/suvm-logo.png"
+    />
     <h1>{{ title }}</h1>
     <p v-html="msg"></p>
     <h2 class="coming-soon">Website coming soon!</h2>
@@ -23,6 +27,9 @@ export default {
 </script>
 
 <style lang="scss">
+.logo {
+  max-width: 375px;
+}
 .coming-soon {
   margin-top: 80px;
 }
