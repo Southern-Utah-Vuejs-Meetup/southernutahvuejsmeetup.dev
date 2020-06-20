@@ -27,9 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-.logo {
-  max-width: 375px;
-}
 .coming-soon {
   margin-top: 80px;
 }
