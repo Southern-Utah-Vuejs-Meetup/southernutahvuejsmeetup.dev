@@ -1,4 +1,5 @@
-import express from "express";
+/* eslint @typescript-eslint/no-var-requires: 0 */
+const express = require("express");
 const app = express();
 const port = process.env.PORT || 8080;
 const dist = __dirname + "/dist/";
