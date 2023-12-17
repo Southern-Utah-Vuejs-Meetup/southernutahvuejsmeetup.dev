@@ -1,30 +1,25 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import { routes } from './routes'
+import { setupI18n, SUPPORT_LOCALES, setI18nLanguage, loadLocaleMessages, locales } from '../services/i18n'
 
-Vue.use(VueRouter);
+const router = createRouter({ history: createWebHistory(), routes })
 
-const routes: Array<RouteConfig> = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
-];
+router.beforeEach(async (to, from) => {
+    console.log(`Navigating to ${to.path} from ${from.path}`)
+    const i18n = setupI18n()
+    let paramsLocale = to.params.locale as string
+    if (!paramsLocale)
+        paramsLocale = i18n.global.availableLocales[0]
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes
-});
+    if (paramsLocale && !SUPPORT_LOCALES.includes(paramsLocale)) {
+        throw new Error('Invalid locale')
+    }
 
-export default router;
+    if (!Object.keys(locales).includes(paramsLocale)) {
+        await loadLocaleMessages(i18n, paramsLocale)
+    }
+
+    setI18nLanguage(i18n, paramsLocale)
+})
+
+export default router
