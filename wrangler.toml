@@ -1,9 +1,12 @@
 name = "southernutahvuejsmeetup"
 compatibility_date = "2026-10-01"
+main = "worker/index.js"
 previews = { }
 
 [assets]
 directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/"]
 not_found_handling = "single-page-application"
 
 [observability.logs]

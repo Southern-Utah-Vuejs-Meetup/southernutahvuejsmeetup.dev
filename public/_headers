@@ -2,4 +2,4 @@
   Content-Type: application/linkset+json
 
 /
-  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
+  Link: </.well-known/api-catalog>; rel="api-catalog", </sitemap.xml>; rel="sitemap"; type="application/xml"
