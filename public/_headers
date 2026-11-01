@@ -1,2 +1,5 @@
 /.well-known/api-catalog
   Content-Type: application/linkset+json
+
+/
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
