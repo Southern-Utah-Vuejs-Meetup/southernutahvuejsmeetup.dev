@@ -9,7 +9,13 @@ import './style.css'
 import { createVuestic } from 'vuestic-ui'
 
 createApp(App)
-    .use(createVuestic())
+    .use(createVuestic({
+        config: {
+            colors: { presets: { light: { backgroundPrimary: '#ffffff' } } },
+            // The settings cog is the only dropdown, this becomes its accessible name
+            i18n: { toggleDropdown: 'Settings' }
+        }
+    }))
     .use(setupI18n())
     .use(router)
     .mount('#app')
