@@ -1,5 +1,6 @@
 name = "southernutahvuejsmeetup"
 compatibility_date = "2026-10-01"
+previews = { }
 
 [assets]
 directory = "./dist"
@@ -15,5 +16,3 @@ persist = true
 enabled = false
 head_sampling_rate = 1
 persist = true
-
-[previews]
