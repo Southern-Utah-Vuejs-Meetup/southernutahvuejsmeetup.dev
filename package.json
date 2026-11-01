@@ -10,7 +10,7 @@
     "test:unit": "vitest run"
   },
   "dependencies": {
-    "vue": "^3.3.11",
+    "vue": "^3.5.44",
     "vue-i18n": "^9.8.0",
     "vue-router": "^4.2.5",
     "vuestic-ui": "^1.8.7"
