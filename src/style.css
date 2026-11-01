@@ -22,8 +22,6 @@ body {
   margin: 0;
   color: var(--va-text-primary);
   background-color: var(--va-background-primary);
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -56,6 +54,6 @@ button:focus-visible {
 }
 
 #app {
-  width: 100%;
+  min-height: 100vh;
   text-align: center;
 }

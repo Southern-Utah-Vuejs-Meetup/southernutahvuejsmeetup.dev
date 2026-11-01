@@ -22,6 +22,10 @@ useThemeEffect()
 </template>
 
 <style lang="scss">
+.va-layout {
+  min-height: 100vh;
+}
+
 body {
   font-family: Avenir,Helvetica,Arial,sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -29,7 +33,12 @@ body {
 
 .main {
   max-width: 1280px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

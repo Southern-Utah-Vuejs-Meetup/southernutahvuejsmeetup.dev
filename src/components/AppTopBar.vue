@@ -44,6 +44,7 @@ const options = [
 <style lang="scss" scoped>
 .top-bar {
   width: 100%;
+  padding-inline: 1.5rem;
 }
 .settings-panel {
   min-width: 240px;
