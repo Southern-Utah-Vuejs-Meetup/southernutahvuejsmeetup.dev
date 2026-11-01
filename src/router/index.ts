@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from './routes'
-import { setupI18n, SUPPORT_LOCALES, setI18nLanguage, loadLocaleMessages, locales } from '../services/i18n'
+import { setupI18n, SUPPORT_LOCALES, setI18nLanguage, loadLocaleMessages, locales } from '@/services/i18n'
 
 const router = createRouter({ history: createWebHistory(), routes })
 

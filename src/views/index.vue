@@ -15,7 +15,7 @@ const msg = ref(
     <img
       class="logo"
       alt="Souther Utah Vue.js Meetup logo"
-      src="../assets/suvm-logo.png"
+      src="@/assets/suvm-logo.png"
     />
     <h1 class="title">{{ title }}</h1>
     <p v-html="msg"></p>

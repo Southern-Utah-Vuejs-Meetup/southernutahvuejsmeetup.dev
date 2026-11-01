@@ -1,7 +1,7 @@
 import { computed, ref, watch } from 'vue'
 import { useColors } from 'vuestic-ui'
 
-import { readPreference, resolveTheme, savePreference, ThemePreference } from '../services/theme'
+import { readPreference, resolveTheme, savePreference, ThemePreference } from '@/services/theme'
 
 const DARK_QUERY = '(prefers-color-scheme: dark)'
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VaNavbar, VaDropdown, VaDropdownContent, VaButton, VaButtonToggle } from 'vuestic-ui'
 
-import { useTheme } from '../composables/useTheme'
+import { useTheme } from '@/composables/useTheme'
 
 const { preference, setPreference } = useTheme()
 

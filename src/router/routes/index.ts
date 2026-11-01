@@ -1,4 +1,4 @@
-const IndexView = () => import("../../views/index.vue")
+const IndexView = () => import("@/views/index.vue")
 
 const routes = [
     {
