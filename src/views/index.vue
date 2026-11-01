@@ -24,6 +24,10 @@ const msg = ref(
 </template>
 
 <style lang="scss" scoped>
+.logo {
+  max-width: 100%;
+  height: auto;
+}
 h1.title {
   font-size: 2rem;
   margin: 0.67em 0;
