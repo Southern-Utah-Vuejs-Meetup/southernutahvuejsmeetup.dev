@@ -2,8 +2,8 @@
 import { RouterView } from 'vue-router'
 import { VaLayout } from 'vuestic-ui'
 
-import AppTopBar from './components/AppTopBar.vue'
-import { useThemeEffect } from './composables/useTheme'
+import AppTopBar from '@/components/AppTopBar.vue'
+import { useThemeEffect } from '@/composables/useTheme'
 
 useThemeEffect()
 </script>
